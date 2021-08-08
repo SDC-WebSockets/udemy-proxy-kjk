@@ -30,3 +30,6 @@ aws.js
 
 # Environment variables
 .env
+
+# New Relic
+newrelic.js
