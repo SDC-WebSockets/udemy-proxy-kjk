@@ -28,10 +28,10 @@ app.all('/sidebar/all', async (req, res) => {
     headers: req.headers,
   })
     .then((results) => {
-      res.send(results.status, results.data);
+      res.status(results.status).send(results.data);
     })
     .catch((err) => {
-      res.send(err.response.status, `${err.response.statusText}: ${err.response.data}`);
+      res.status(err.response.status).send(`${err.response.statusText}: ${err.response.data}`);
     });
 });
 
