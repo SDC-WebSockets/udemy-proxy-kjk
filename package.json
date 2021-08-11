@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest --detectOpenHandles",
     "start": "nodemon server/start.js",
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "dev": "webpack --watch"
   },
   "repository": {
