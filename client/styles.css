@@ -405,7 +405,7 @@
 .default-sidebar-position {
   position: relative;
   top: 30px;
-  z-index: 500;
+  z-index: 1500;
   float: right;
   margin-top: 85px;
   margin-bottom: 16px;

@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-
 export const Proxy = () => {
 
-  const [ proxyOffset, setProxyOffset ] = useState(0);
+  const [ proxyOffset, setProxyOffset ] = React.useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     window.onscroll = () => {
       setProxyOffset(window.pageYOffset);
     }
